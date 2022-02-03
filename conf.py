@@ -81,7 +81,7 @@ locale_dirs = ['../locales', 'cpython/locales']  # relative to the sourcedir
 # So, we put all the documentation as a single file for now.
 _stdauthor = r'Guido van Rossum\\and the Python development team'
 latex_documents = [
-    ('contents', 'python-docs-es.tex', u'Documentación de Python en Español',
+    ('tutorial/index', 'python-docs-es.tex', u'Documentación de Python en Español',
      _stdauthor, 'manual'),
 ]
 
