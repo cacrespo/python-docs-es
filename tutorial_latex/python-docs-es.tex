@@ -56,6 +56,12 @@
 \geometry{
  right=10mm
  }
+ 
+
+
+\usepackage{draftwatermark}
+\SetWatermarkScale{1}
+\SetWatermarkText{}
 
 % Include hyperref last.
 \usepackage{hyperref}
@@ -78,12 +84,13 @@
 \setcounter{tocdepth}{2}
 
 \title{Documentación de Python en Español}
-\date{febrero 03, 2022}
+\date{febrero, 2022}
 \release{3.10.0}
 \author{Guido van Rossum\\and the Python development team}
 \newcommand{\sphinxlogo}{\vbox{}}
 \renewcommand{\releasename}{Versión}
 \makeindex
+
 
 \begin{document}
 
@@ -5674,8 +5681,10 @@ Para preguntas relacionadas con Python y reportes de problemas puedes escribir a
 Antes de escribir, asegúrate de haber revisado la lista de \DUrole{xref,std,std-ref}{Frequently Asked Questions} (también llamado el \sphinxstyleemphasis{FAQ}). Muchas veces responde las preguntas que se hacen una y otra vez, y quizás contenga la solución a tu problema.
 \subsubsection*{Notas al pie}
 
-
 \chapter{Edición de entrada interactiva y sustitución de historial}
+
+\SetWatermarkText{ELIMINAR}
+
 \label{\detokenize{tutorial/interactive:interactive-input-editing-and-history-substitution}}\label{\detokenize{tutorial/interactive:tut-interacting}}\label{\detokenize{tutorial/interactive::doc}}
 \sphinxAtStartPar
 Algunas versiones del intérprete de Python permiten editar la línea de entrada actual, y sustituir en base al historial, de forma similar a las capacidades del intérprete de comandos \sphinxstyleemphasis{Korn} y el GNU bash.  Esto se implementa con la biblioteca \sphinxhref{https://tiswww.case.edu/php/chet/readline/rltop.html}{GNU Readline}, que soporta varios estilos de edición.  Esta biblioteca tiene su propia documentación la cuál no vamos a duplicar aquí.
@@ -5994,7 +6003,6 @@ Los módulos \sphinxcode{\sphinxupquote{fractions}} y \sphinxcode{\sphinxupquote
 \PYG{g+go}{\PYGZsq{}0.10000000000000001\PYGZsq{}}
 \end{sphinxVerbatim}
 
-
 \chapter{Apéndice}
 \label{\detokenize{tutorial/appendix:appendix}}\label{\detokenize{tutorial/appendix:tut-appendix}}\label{\detokenize{tutorial/appendix::doc}}
 
@@ -6078,6 +6086,7 @@ Ahora puedes crear un archivo llamado \sphinxcode{\sphinxupquote{usercustomize.p
 
 \appendix
 \phantomsection\label{\detokenize{glossary::doc}}
+
 
 \chapter{Glosario}
 \label{\detokenize{glossary:glossary}}\label{\detokenize{glossary:id1}}\begin{description}
